@@ -1,0 +1,26 @@
+{
+  "name": "Swag_Labs_01",
+  "version": "1.0.0",
+  "description": "Puppeteer project with Cucumber.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.json",
+    "test:focus": "cucumber-js --tags @focus -f json:cucumber_report.json",
+    "generate:report": "node report.js"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supercharge/strings": "^1.18.0",
+    "chai": "^4.3.0",
+    "cucumber-html-reporter": "^5.3.0",
+    "puppeteer": "^7.1.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0"
+  }
+}
